@@ -14,11 +14,45 @@
                   <div class="col-lg-3 slide">
                         <div class="case">
                                 <img class="logo" style="height: 20%;" src={% static "images/logo.png" %}>                        </div>
+                                            <ol class="list1">
+                                           
+                                            <li>Portfolio</li>
+                                            <li>Illustration</li>
+                                            <li>Portraits</li>
+                                            <li>Contact</li>
+                                            <li>About</li>
+                                            
+                                        </ol>
+                                        <ol class="list2">
+                                           
+                                                <li>Twitter</li>
+                                                <li>Facebook</li>
+                                                <li>Instagram</li>
+                                                <li>LikedIn</li>
+                                                
+                                                
+                                            </ol>
+                    
+                        </div>
                     </div>
+                    <div class="row">
+                            <div class="col-lg-3 "></div>
+                        <div class="col-lg-9 galery">
+                            
+                                {% for post in posts %}
+                                <div class="khan">
+                                        <img src="{{ post.picture.url }}" alt="img">
+                                        <p>{{post.title}}</p>
+                                    </div>
+                                {% endfor %}
+                            
+                         </div>
+
                   </div>
-                 
+                  
+                 </div>
                 </div>
-              
+                
 
 
 
