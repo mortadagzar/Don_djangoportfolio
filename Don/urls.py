@@ -10,5 +10,6 @@ urlpatterns = [
     path('', views.index,name='index'),
     path('about', views.about,name='about'),
     path('post/<int:pk>/', views.workview, name='workview'),
+    path('contact', views.contact, name='contact),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
