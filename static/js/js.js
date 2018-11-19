@@ -15,7 +15,16 @@ $(document).ready(function() {
     
 
     $("#bar").click(function(){
-        $("#slide").show();  
+        $("#slide").show(); 
+        $("#barb").show(); 
+        $("#bar").hide(); 
+         
+});
+$("#barb").click(function(){
+    $("#slide").hide(); 
+    $("#barb").hide(); 
+    $("#bar").show(); 
+     
 });
    
 
