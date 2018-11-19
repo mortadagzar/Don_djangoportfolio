@@ -1,7 +1,57 @@
+.imagedetail{
+    opacity: 0.4;
+        width: 60%;
+    }
+
+
+
+    a:link {
+        color:#adaaab;
+      }
+      
+      a:visited {
+        color:#adaaab;
+      }
+      
+      a:focus {
+        color:#adaaab;
+      }
+      
+      a:hover {
+        color:#a70341;
+          
+      }
+      
+      a:active {
+        color:#adaaab;
+        
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .slide{
     background: #E3E2DF;
     height: 100%;
    position: fixed;
+   z-index: 999;
    
 }
 .galery{
@@ -19,14 +69,27 @@ p{
     color:#adaaab;
     padding-left: 5px;
 }
+.mobileslide{
+    display: none;
+}
 .case{
 
    
+}
+
+.bar{
+    z-index: 1000;
+    position: fixed;
+    left:80%;
+    top:5%;
+    color: #d79d02;
+    
 }
 .logo{
    
     margin: 50px auto 20px;
     display: block;
+    cursor: pointer;
 
 
 }
@@ -37,7 +100,9 @@ p{
     color:#adaaab;
     font-weight: 600;
     list-style-type: none;
+    cursor: pointer;
 }
+
 .list2{
     margin: 50px auto 40px 30px;
     display: block;
