@@ -1,7 +1,8 @@
 from django.http import HttpResponse
-from django.shortcuts import render_to_response, render
+from django.shortcuts import render_to_response, render,redirect
 from .models import Post
-from *forms import ContactForm
+from django.core.mail import send_mail, BadHeaderError
+from .forms import ContactForm
 
 from django.shortcuts import get_object_or_404
 
@@ -26,7 +27,7 @@ def workview(request, pk):
 
 
 
-def emailView(request):
+def contact(request):
     if request.method == 'GET':
         form = ContactForm()
     else:
@@ -39,8 +40,11 @@ def emailView(request):
                 send_mail(subject, message, from_email, ['admin@example.com'])
             except BadHeaderError:
                 return HttpResponse('Invalid header found.')
-            return redirect('success')
+            return redirect('successView')
     return render(request, "contact.html", {'form': form})
 
+
+
 def successView(request):
-    return HttpResponse('Success! Thank you for your message.')    
+    return render(request, "successView.html")
+    

@@ -1,3 +1,10 @@
+#mobile_header{
+    height: 100px;
+}
+
+
+
+
 .imagedetail{
     opacity: 0.4;
         width: 60%;
@@ -163,6 +170,15 @@ p{
     margin: 50px auto 20px;
     display: block;
     cursor: pointer;
+
+
+}
+.logo_mobile{
+   height: 10%;
+    margin: 15px 30px 40px 100px;
+    display: block;
+    cursor: pointer;
+    position: fixed;
 
 
 }
