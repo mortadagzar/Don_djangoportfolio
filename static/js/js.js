@@ -5,26 +5,28 @@ $(document).ready(function() {
     $("#slide").hide();
     $(".bar").show();
     
+    $("#menue").hide();
     }
     
     else {
         $("#mobile_header").hide();
         $(".bar").hide();
     $("#slide").show();
+    $("#menue").hide();
     
     }
     
 
     $("#bar").click(function(){
-        $("#slide").show(); 
+        $("#menue").show();
         $("#barb").show(); 
         $("#bar").hide(); 
          
 });
 $("#barb").click(function(){
-    $("#slide").hide(); 
     $("#barb").hide(); 
     $("#bar").show(); 
+    $("#menue").hide();
      
 });
    

@@ -47,4 +47,12 @@ def contact(request):
 
 def successView(request):
     return render(request, "successView.html")
+
+
+
+def home(request):
+    posts=Post.objects.all()
+    context={'posts':posts}
+    return render(request, "home.html",context)
+
     

@@ -1,0 +1,102 @@
+<html lang="en">
+<head>
+        {% block title %}
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DonworkS :: Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="{% static 'js/js.js' %}"></script>
+</head>
+
+
+
+<div id="menue">
+
+        <ol class="list1b">
+                                           
+                <li><a href="{% url 'index' %}">Portfolio</a></li>
+               <li>Illustration</li>
+               <li>Portraits</li>
+               <li><a href="{% url 'contact' %}">Contact</a></li>
+               <li><a href="{% url 'about' %}">About</a></li>
+               
+               
+           </ol>
+           <ol class="list2b">
+              
+                   <li>Twitter</li>
+                   <li>Facebook</li>
+                   <li>Instagram</li>
+                   <li>LikedIn</li>
+                   
+                   
+               </ol>
+
+
+
+</div>
+
+<div class="container-fluid">
+        <div id="mobile_header" > 
+                <img class="logo_mobile"  src={% static "images/logo.png" %}> 
+                <div class="bar" id="bar"><i class="fa fa-bars" style="font-size:48px;"></i></div>
+                <div class="barb" id="barb"><i class="fa fa-bars" style="font-size:48px;"></i></div>                       </div>
+           </div>
+        <div class="row">
+               
+            <div class="col-sm-3 px-1  bg-light" id="slide">
+                <div class="py-2 sticky-top flex-grow-1">
+                    <div class="nav flex-sm-column">
+                       
+                        <img class="logo" style="height: 20%;" src={% static "images/logo.png" %}>      
+
+                        <ol class="list1">
+                                           
+                                <li><a href="{% url 'index' %}">Portfolio</a></li>
+                               <li>Illustration</li>
+                               <li>Portraits</li>
+                               <li><a href="{% url 'contact' %}">Contact</a></li>
+                               <li><a href="{% url 'about' %}">About</a></li>
+                               
+                               
+                           </ol>
+                           <ol class="list2">
+                              
+                                   <li>Twitter</li>
+                                   <li>Facebook</li>
+                                   <li>Instagram</li>
+                                   <li>LikedIn</li>
+                                   
+                                   
+                               </ol>
+                               <div class="footer">
+
+                               Home made by <a class="by" href="https://www.mgzar.com/">Mortada Gzar </a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col" id="main">
+                    {% for post in posts %}
+                    <div class="col-lg-3 col-md-4 col-sm-3 col-xl-3 khan">
+                            <a href="{% url 'workview' pk=post.pk %}"> <img src="{{ post.picture.url }}" alt="img" class="imgkhan"></a>
+                           
+                            <p class="title">{{post.title}}</p>
+                        </div>
+                    {% endfor %}
+
+            </div>
+
+
+        </div>
+        
+
+    </div>
+
+    {% endblock %}
