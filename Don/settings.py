@@ -25,8 +25,7 @@ SECRET_KEY = 'i_(^e4jt4q0!th!8y3zalp-q$uiz+a$61*7p0^v1+a^^c8^e!#'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'www.donillustrations.com',
-
+ 
 ]
 
 

@@ -7,10 +7,10 @@ from .forms import ContactForm
 from django.shortcuts import get_object_or_404
 
 
-def index(request):
+def Portraits(request):
     posts=Post.objects.all()
     context={'posts':posts}
-    return render(request, 'index.html',context)
+    return render(request, 'Portraits.html',context)
 
 
 
@@ -24,6 +24,8 @@ def workview(request, pk):
     post = get_object_or_404(Post, pk=pk)
     return render(request, 'workview.html', {'post': post})
 
+def illustrations(request):
+    return render(request,'illustrations.html')
 
 
 
