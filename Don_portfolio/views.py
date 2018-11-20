@@ -25,7 +25,10 @@ def workview(request, pk):
     return render(request, 'workview.html', {'post': post})
 
 def illustrations(request):
-    return render(request,'illustrations.html')
+    posts=Post.objects.all()
+    context={'posts':posts}
+    return render(request,'illustrations.html',context)
+    
 
 
 

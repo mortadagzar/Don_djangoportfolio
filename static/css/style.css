@@ -4,6 +4,14 @@
   overflow-x: hidden;
 }
 
+#mainc{
+  
+  align-items: center;
+  text-align: center; 
+}
+
+
+
 
 .logo_mobile{
   background: white;
@@ -284,9 +292,28 @@ box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.75);
       opacity: 1;
     }
   }
+ .form-control{
+   margin-bottom: 8%;
+ } 
+.contactp{
+  text-align: left;
+  padding: 10px;
+  width: 80%;
+  text-justify: auto;
+}
+.formc{
+  width:100%;
+  margin: 4% 9% 9% 9%;
+  align-items: center;
   
+}
 
-
+.butt{
+  width:100%;
+  text-align: center;
+  align-items: center;
+  color:white;
+}
 
 
 
@@ -303,6 +330,23 @@ box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.75);
     padding: 3px;
    
 }
+.khanil{
+  margin: 20px auto;
+    display: block;
+    padding: 3px; 
+   
+}
+
+.imgkhanil{
+  width:120%;
+  border-radius: 4px;
+ padding: 5px;
+ margin: 0px 10px 10px 10px;
+ background: red;
+}
+
+
+
 
 
 .imgkhan {
@@ -357,7 +401,13 @@ box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.75);
 }
 
 
-
+.imagehover{
+  transition: .2s ease; 
+}
+.imagehover:hover {
+  opacity:0.6;
+    
+}
 
 
 
@@ -376,6 +426,7 @@ box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.75);
       a:hover {
         color:#a70341;
         text-decoration:none; 
+        padding-left: 8px;
           
       }
       
@@ -383,8 +434,9 @@ box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.75);
         color:#adaaab;
         
       }
-
-
+a{
+  transition: .2s ease;
+}
 
 
 
