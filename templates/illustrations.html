@@ -31,10 +31,10 @@
            </ol>
            <ol class="list2b">
               
-                   <li>Twitter</li>
-                   <li>Facebook</li>
-                   <li>Instagram</li>
-                   <li>LikedIn</li>
+                   <a href="https://twitter.com/donworks"><li>Twitter</li></a>
+                   <a href="https://www.facebook.com/donald.t.mccullough"><li>Facebook</li></a>
+                   <a href="https://www.instagram.com/donaldmccullough/"><li>Instagram</li></a>
+                   <li>LinkedIn</li>
                    
                    
                </ol>
@@ -69,10 +69,10 @@
                            </ol>
                            <ol class="list2">
                               
-                                   <li>Twitter</li>
-                                   <li>Facebook</li>
-                                   <li>Instagram</li>
-                                   <li>LikedIn</li>
+                                   <a href="https://twitter.com/donworks"><li>Twitter</li></a>
+                   <a href="https://www.facebook.com/donald.t.mccullough"><li>Facebook</li></a>
+                   <a href="https://www.instagram.com/donaldmccullough/"><li>Instagram</li></a>
+                   <li>LinkedIn</li>
                                    
                                    
                                </ol>
@@ -83,25 +83,21 @@
                     </div>
                 </div>
             </div>
-            
-
-
-
- {% for post in posts %}
-                    <div class="">
-                            <a href="{% url 'workview' pk=post.pk %}"> <img src="{{ post.picture.url }}" alt="img" class="imgkhan"></a>
+            <div class="col" id="mainc">
+                    {% for post in posts %}
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xl-12 khan">
+                            <a class="imagehover" href="{% url 'workview' pk=post.pk %}"> <img src="{{ post.picture.url }}" alt="img" class="imgkhans"></a>
                            
-                            <p class="title">{{post.title}}</p>
-                       
+                            <p class="titles">{{post.title}}</p>
+                        </div>
                     {% endfor %}
 
+            </div>
 
 
+        </div>
+        
 
-
-</div>
-
-
-
+    </div>
 
     {% endblock %}

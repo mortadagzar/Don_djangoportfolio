@@ -31,10 +31,10 @@
            </ol>
            <ol class="list2b">
               
-                   <li>Twitter</li>
-                   <li>Facebook</li>
-                   <li>Instagram</li>
-                   <li>LikedIn</li>
+                   <a href="https://twitter.com/donworks"><li>Twitter</li></a>
+                   <a href="https://www.facebook.com/donald.t.mccullough"><li>Facebook</li></a>
+                   <a href="https://www.instagram.com/donaldmccullough/"><li>Instagram</li></a>
+                   <li>LinkedIn</li>
                    
                    
                </ol>
@@ -69,10 +69,10 @@
                            </ol>
                            <ol class="list2">
                               
-                                   <li>Twitter</li>
-                                   <li>Facebook</li>
-                                   <li>Instagram</li>
-                                   <li>LikedIn</li>
+                                   <a href="https://twitter.com/donworks"><li>Twitter</li></a>
+                   <a href="https://www.facebook.com/donald.t.mccullough"><li>Facebook</li></a>
+                   <a href="https://www.instagram.com/donaldmccullough/"><li>Instagram</li></a>
+                   <li>LinkedIn</li>
                                    
                                    
                                </ol>
@@ -86,7 +86,7 @@
             <div class="col" id="main">
                     {% for post in posts %}
                     <div class="col-lg-3 col-md-4 col-sm-3 col-xl-3 khan">
-                            <a href="{% url 'workview' pk=post.pk %}"> <img src="{{ post.picture.url }}" alt="img" class="imgkhan"></a>
+                            <a class="imagehover" href="{% url 'workview' pk=post.pk %}"> <img src="{{ post.picture.url }}" alt="img" class="imgkhan"></a>
                            
                             <p class="title">{{post.title}}</p>
                         </div>
