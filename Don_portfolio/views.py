@@ -48,7 +48,7 @@ def contact(request):
             return redirect('successView')
     return render(request, "contact.html", {'form': form})
 
-g
+gffff
 
 def successView(request):
     return render(request, "successView.html")
